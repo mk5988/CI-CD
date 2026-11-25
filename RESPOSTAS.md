@@ -3,13 +3,13 @@
 Equipe
 
 Integrantes:
-Augusto Reis
-Elton Gonçalves
-Erick Andrade
-Marlon Santos
-Thiago Soares
-Vinicius Souza
-Yago Santana
+Augusto Reis,
+Elton Gonçalves,
+Erick Andrade,
+Marlon Santos,
+Thiago Soares,
+Vinicius Souza,
+Yago Santana.
 
 Repositório
 
