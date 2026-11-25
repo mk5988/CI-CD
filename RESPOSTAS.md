@@ -2,7 +2,14 @@
 
 Equipe
 
-Integrantes
+Integrantes:
+Augusto Reis
+Elton Gonçalves
+Erick Andrade
+Marlon Santos
+Thiago Soares
+Vinicius Souza
+Yago Santana
 
 Repositório
 
@@ -16,7 +23,7 @@ Responda Q01 a Q22 em equipe. Cada integrante deve registrar suas respostas pró
 
 Se queremos automatizar os testes e disponibilizar o site por um endereço, qual responsabilidade cabe ao GitHub Actions e qual cabe ao GitHub Pages?
 
-Resposta
+Resposta: O GitHub Actions é responsável por automatizar a execução dos testes, verificando se o código está funcionando corretamente. Já o GitHub Pages é responsável por hospedar e disponibilizar o site por meio de um endereço público na internet.
 
 Observação após a execução
 
@@ -24,7 +31,7 @@ Observação após a execução
 
 Que problema operacional pode ocorrer se cada integrante publicar uma cópia diferente do código sem registrar a versão utilizada?
 
-Resposta
+Resposta: Pode ocorrer divergência entre as versões do código
 
 Observação após a execução
 
@@ -38,9 +45,9 @@ Anote no arquivo de respostas o link do repositório e o nome da branch.
 
 Que informação o commit registra para que outra pessoa consiga localizar esta entrega depois?
 
-Resposta
+Resposta: O commit registra uma identificação única (hash), a mensagem que descreve a alteração, o autor, a data e as modificações realizadas no código.
 
-Observação após a execução
+Observação após a execução: Ao realizar o commit no GitHub, a alteração ficou registrada no histórico do repositório, permitindo consultar a mensagem, a data e o código modificado.
 
 ### Q04
 
