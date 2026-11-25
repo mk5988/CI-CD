@@ -1,4 +1,4 @@
-name: CI do Quiz
+name: CI/CD do Quiz
 
 on:
   push:
@@ -7,6 +7,10 @@ on:
 
 permissions:
   contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
 
 jobs:
   testes:
@@ -25,3 +29,33 @@ jobs:
 
       - name: Executar testes
         run: npm test
+
+  publicar:
+    name: Publicar site
+    needs: testes
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Buscar codigo do repositorio
+        uses: actions/checkout@v6
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Empacotar arquivos do site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: './site'
+
+      - name: Publicar no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
